@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #65f6f4;
+
+}
+
+header, nav, section, article, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #526c6a;
+    border: 1px solid #ddd;
+}
+
+h2{
+    text-align: center;
+}
+#sidebar{
+    width: 35%; /* Adjust the width as needed */
+    margin-left: auto; /* Push the div to the right */
+    background-color: #af8282; /* Add background color if needed */
+    padding: 15px; /* Add padding for spacing */
+
+}
+
+.slike1 {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+.slike1 > div {
+    flex-basis: calc(33.33% - 10px); /* Calculate one-third of the width, considering margin */
+    margin: 0 5px; /* Add margin between the child divs */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+p{
+    text-align:justify;
+}
+
+.imenaslika{
+    font-weight: bolder;
+    text-align:center;
+}
+.hr1{
+    height: 5px;
+    background-color: #777;
+    border-radius: 20%;
+}
+.gamingpc{
+    max-width: 100%;
+    
+}
+.tabela{
+    max-width: 70%;
+    margin: auto;
+    border: 3px solid black;
+    margin-top: 40px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(173, 246, 246);
+
+}
+.hr2{
+    color: black;
+    
+}
+
+
+header {
+    text-align: center; /* Center the text within the header */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center; /* Center the text within the navigation */
+}
+
+nav li {
+    display: inline-block; /* Display navigation items horizontally */
+}
+
+nav li button,a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #af8282;
+}
+
+nav li button:hover {
+    background-color: #ddd;
+    color: #af8282;
+    font-weight: bolder;
+}
+nav li a:hover{
+    background-color: #ddd;
+    color: #af8282;
+    font-weight: bolder;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+article {
+    flex-basis: 48%;
+    margin: 0 1%; /* Adjust margin to create space between articles */
+    margin-bottom: 20px;
+}
+.abtus{
+    height: 300px;
+}
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #main-content {
+        flex-direction: column;
+    }
+
+    article {
+        flex-basis: 100%;
+    }
+}
+.content{
+    width: 70%;
+    margin: auto;
+    display: none;
+}
+
+
+
+
+
